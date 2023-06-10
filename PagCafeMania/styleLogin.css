@@ -1,0 +1,119 @@
+/* --------------------------------- */
+/* ----------- página 2 ------------ */
+
+/* --------------------------------- */
+/* -------------- body ------------- */
+
+body {
+    background-image: url(img/coffee-5417663_1280.png);
+    background-size: 350px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------------------------- */
+/* -------------- form ------------- */
+
+.loginForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+    background-color: rgba(88, 49, 1, 0.8);
+    height: 280px;
+    width: 275px;
+    border: 4px solid rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+/* ------------ parte 1 ---------- */
+
+.loginForm .parte1 {
+    margin-bottom: 50px;
+}
+
+.loginForm .parte1 .user{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.loginForm .parte1 input{
+    padding: 16.3px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: medium;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.loginForm .parte1 input::placeholder{
+    color: rgb(66, 66, 66);
+}
+
+.loginForm .parte1 .password{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.loginForm .parte1 img{
+    width: 45px;
+    background-color: white;
+    padding: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* ------------ parte 2 ---------- */
+
+.loginForm .parte2{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.loginForm .parte2 input{
+    background-color: rgba(66,66,66, 0.9);
+    cursor: pointer;
+}
+
+.loginForm .parte2 a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+}
+
+/* ------------ parte 3 ---------- */
+
+.loginForm .parte3{
+    padding-top: 15px;
+}
+
+.loginForm .parte3 input{
+    padding: 15px 125px 15px 125px;
+    background-color: rgba(66, 47, 8, 0.804);
+    border: 4px solid rgba(55, 39, 5, 0.804);
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="button"]:hover{
+    border-bottom: 4px solid rgba(47, 34, 4, 0.804);
+    border-right: 4px solid rgba(47, 34, 4, 0.804);
+    border-top: 4px solid rgba(75, 54, 11, 0.804);
+    border-left: 4px solid rgba(75, 54, 11, 0.804);
+}
+

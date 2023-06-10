@@ -1,0 +1,642 @@
+/* ------------------------------------ */
+/* ------------- Página 1 ------------- */
+
+/* --------------- body --------------- */
+body {
+    background-image: url(img/coffee-5417663_1280.png);
+    background-size: 350px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -------------------------------------- */
+/* --------------- Header --------------- */
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+}
+
+.menu {
+    width: 100%;
+    background-color: rgb(88, 49, 1);
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    font-size: 20px;
+    padding: 10px;
+    font-family: sans-serif;
+    color: aliceblue;
+    z-index: 1;
+}
+
+.menu .CoffeLogo {
+    width: 150px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: px;
+    background-color: rgb(96, 56, 8);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(111, 69, 24);
+    box-shadow: 5px 5px 10px rgb(26, 26, 26);
+}
+
+.menu .menuLink .menuHamburguer {
+    display: none;
+    width: 60px;
+}
+
+.menu .menuLink {
+    display: flex;
+    align-items: center;
+}
+
+.menu .menuLink .LinkMenu {
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 50px;
+    transition: background-color 700ms, box-shadow 700ms, border-radius 700ms;
+    /* cria uma transição leve para os elementos que estão no :hover */
+}
+
+.LinkMenu:hover {
+    /*--- Adiciona um efeito "hover" para a classe linkMenu --- */
+    /*deixa o fundo transparente*/
+    background-color: rgb(111, 69, 24);
+    box-shadow: inset 0 0 0 3px rgb(111, 69, 24);
+    /* cria um box-shadow para dentro da bordar (inset) */
+    border-radius: 50px;
+}
+
+.menu .lateral {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.menu .lateral .SearchIcon img {
+    width: 50px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: background-color 200ms, border-radius 200ms;
+}
+
+.menu .lateral .SearchIcon img:hover {
+    background-color: rgba(111, 69, 24, 0.5);
+}
+
+.menu .lateral .button1 {
+    margin: 5px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    border-color: black;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    /*---- Mostra o cursor apotando quando o mouse passa em cima do botão ----*/
+    transition: transform 200ms linear;
+    box-shadow: 5px 5px 15px rgb(26, 26, 26);
+}
+
+.menu .lateral .button2 {
+    margin: 5px;
+    background-color: black;
+    color: white;
+    border-color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    /*---- Mostra o cursor apotando quando o mouse passa em cima do botão ----*/
+    transition: transform 200ms linear;
+    box-shadow: 5px 5px 15px rgb(26, 26, 26);
+}
+
+button:hover {
+    transform: scale(1.1);
+    /* aumenta a escala do botão quando o mouse passa em cima */
+}
+
+.relativoMenu {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+
+#menuCelular {
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: sans-serif;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+    transform: translateY(250px);
+    animation: DropDownMenu 370ms ease-in-out;
+    transition: transform 200ms linear;
+}
+
+@keyframes DropDownMenu {
+    0% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(250px);
+    }
+}
+
+#menuCelular ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#menuCelular .LinkMenuC {
+    color: aliceblue;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 15px;
+    transition: background-color 200ms, border-radius 200ms;
+}
+
+#menuCelular .SearchDesign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menuCelular .SearchDesign input {
+    padding: 10px 25px 10px 25px;
+    border-radius: 15px;
+    border: 0px none;
+    margin-right: 10px;
+}
+
+#menuCelular .SearchIcon img {
+    padding: 10px;
+    width: 45px;
+}
+
+#menuCelular .LinkMenuC:hover {
+    background-color: rgba(111, 69, 24, 0.5);
+    border-radius: 15px;
+}
+
+.relativo {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+#Search {
+    display: none;
+    transform: translateY(135px);
+    animation: DropDown 370ms ease-in-out;
+    transition: transform 200ms linear;
+}
+
+@keyframes DropDown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(135px);
+    }
+}
+
+
+
+#Search .SearchDesign {
+    display: flex;
+    align-items: center;
+    position: relative;
+    float: right;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 0px 0px 15px 15px;
+    padding: 25px;
+    margin-right: 15px;
+    background-color: rgb(88, 49, 1);
+}
+
+#Search .SearchBar input {
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 25px;
+}
+
+#Search .SearchIcon img {
+    padding: 10px;
+    width: 45px;
+}
+
+
+/* ----------------------------------------------- */
+/* ---------- nav --------- */
+
+.subMenu {
+    background-color: aliceblue;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 5px;
+    border-bottom-style: solid;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-color: rgb(215, 222, 228);
+    box-shadow: 5px 10px 25px rgb(26, 26, 26);
+}
+
+.subMenu .contato a img {
+    width: 30px;
+    padding: 2px;
+}
+
+.subMenu a {
+    text-decoration: none;
+    color: rgb(175, 175, 175);
+    padding-left: 5px;
+}
+
+.subMenu .contato a {
+    display: flex;
+    align-items: center;
+    padding: 2.5px;
+    background-color: rgb(227, 235, 243);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(212, 218, 225);
+    transition: transform 100ms linear;
+}
+
+.contato a:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* ----------------------------------------------- */
+/* ---------- main --------- */
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuCarrossel {
+    margin-top: 130px;
+    background-color: aliceblue;
+    height: 550px;
+    width: 70%;
+    box-shadow: 0px 10px 25px rgb(26, 26, 26);
+    z-index: 3;
+}
+
+.evento1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: blanchedalmond;
+    padding-top: 10px;
+    height: 460px;
+    width: 70%;
+    box-shadow: 0px 10px 25px rgb(26, 26, 26);
+    z-index: 2;
+}
+
+.evento1 .textEvento1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    background-color: rgb(255, 231, 189);
+    border: 4px solid rgb(240, 218, 179);
+    border-radius: 25px;
+    margin: 15px;
+    width: 425px;
+    height: 425px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 5px 5px 20px rgb(26, 26, 26);
+}
+
+.evento1 .textEvento1 h2 {
+    color: rgb(232, 203, 44);
+    font-size: 35px;
+    text-shadow: 2px 2px 0px black;
+    text-align: center;
+}
+
+.evento1 .textEvento1 p {
+    padding-top: 10px;
+    width: 350px;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+.evento1 .textEvento1 button {
+    margin-top: 55px;
+    padding: 10px;
+    font-weight: bolder;
+    border: 2px solid black;
+    background-color: rgb(255, 231, 189);
+    transition: transform 100ms ease-in;
+}
+
+.evento2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    background-color: rgb(78, 43, 13);
+    height: 460px;
+    width: 70%;
+    padding-top: 10px;
+    box-shadow: 0px 10px 25px rgb(26, 26, 26);
+    z-index: 1;
+}
+
+.evento2 .textEvento2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    background-color: rgb(111, 64, 24);
+    border: 4px solid rgb(93, 54, 20);
+    border-radius: 25px;
+    margin: 15px;
+    width: 425px;
+    height: 425px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 5px 5px 20px rgb(26, 26, 26);
+}
+
+.evento2 .textEvento2 h2 {
+    color: rgb(164, 78, 2);
+    font-size: 35px;
+    text-shadow: 2px 2px 0px black;
+    text-align: center;
+}
+
+.evento2 .textEvento2 p {
+    padding-top: 10px;
+    width: 350px;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+.evento2 .textEvento2 button {
+    margin-top: 55px;
+    padding: 10px;
+    font-weight: bolder;
+    border: 2px solid black;
+    background-color: rgb(111, 64, 24);
+    transition: transform 100ms ease-in;
+}
+
+.evento3 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: aliceblue;
+    height: 460px;
+    width: 70%;
+    padding-top: 10px;
+    box-shadow: 0px 10px 25px rgb(26, 26, 26);
+    z-index: 0;
+}
+
+.evento3 .textEvento3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    background-color: rgb(217, 226, 235);
+    border: 4px solid rgb(193, 201, 209);
+    border-radius: 25px;
+    margin: 15px;
+    width: 425px;
+    height: 425px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 5px 5px 20px rgb(26, 26, 26);
+}
+
+.evento3 .textEvento3 h2 {
+    color: rgb(18, 138, 171);
+    font-size: 35px;
+    text-shadow: 2px 2px 0px black;
+    text-align: center;
+}
+
+.evento3 .textEvento3 p {
+    padding-top: 10px;
+    width: 350px;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+.evento3 .textEvento3 button {
+    margin-top: 55px;
+    padding: 10px;
+    font-weight: bolder;
+    border: 2px solid black;
+    background-color: rgb(217, 226, 235);
+    transition: transform 100ms ease-in;
+}
+
+.imgEvento img {
+    width: 425px;
+    margin: 15px;
+    border-radius: 25px;
+    border: 4px dashed rgb(233, 185, 82);
+}
+
+
+
+
+/* .evento1 */
+
+/* ----------------------------------------------- */
+/* ---------- Footer --------- */
+
+.footer {
+    background-color: rgb(14, 14, 14);
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.footer .rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .rodape .AboutUs {
+    width: 320px;
+}
+
+.footer .rodape .AboutUs h2 {
+    text-align: center;
+}
+
+.footer .rodape .AboutUs p {
+    text-indent: 15px;
+}
+
+.footer .rodape .contatoFooter img {
+    width: 25px;
+    padding: 15px;
+}
+
+.rodape2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 45px;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+/* ----------------------------------------------- */
+/* ---------- Media Query --------- */
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 250px;
+    }
+
+    /* --------------- Header --------------- */
+
+    .menu .menuLink .menuHamburguer {
+        display: inline;
+        cursor: pointer;
+        border-radius: 15px;
+        transition: background-color 700ms, box-shadow 700ms, border-radius 700ms;
+    }
+
+    .menuHamburguer:hover {
+        /*deixa o fundo transparente*/
+        background-color: rgb(111, 69, 24);
+        box-shadow: inset 0 0 0 3px rgb(111, 69, 24);
+        /* cria um box-shadow para dentro da bordar (inset) */
+        border-radius: 15px;
+    }
+
+    .menu .menuLink .CoffeLogo {
+        display: none;
+    }
+
+    .menu .menuLink {
+        flex-direction: row-reverse;
+    }
+
+    .menu .menuLink span {
+        display: none;
+    }
+
+    .menu .menuLink .LinkMenu {
+        display: none;
+    }
+
+    .menu .lateral .SearchIcon img {
+        display: none;
+    }
+
+    #Search .SearchDesign {
+        display: none;
+    }
+
+    /* ---------- main --------- */
+
+    .menuCarrossel {
+        width: 80%;
+    }
+
+    /* ----- evento 1 ----- */
+    .evento1{
+        width: 80%;
+        height: 825px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .evento1 .textEvento1{
+        width: 335px;
+        font-size: small;
+        padding: 5px;
+    }
+
+    .evento1 .textEvento1 p{
+        width: 275px;
+    }
+
+    .evento1 img{
+        width: 335px;
+        padding: 5px;
+    }
+
+    /* ----- evento 2 ----- */
+    .evento2{
+        width: 80%;
+        height: 825px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .evento2 .textEvento2{
+        width: 335px;
+        font-size: small;
+        padding: 5px;
+    }
+
+    .evento2 .textEvento2 p{
+        width: 250px;
+    }
+
+    .evento2 img{
+        width: 335px;
+        padding: 5px;
+    }
+    /* ----- evento 3 ----- */
+
+    .evento3{
+        width: 80%;
+        height: 825px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .evento3 .textEvento3{
+        width: 335px;
+        font-size: small;
+        padding: 5px;
+    }
+
+    .evento3 .textEvento3 p{
+        width: 250px;
+    }
+
+    .evento3 img{
+        width: 335px;
+        padding: 5px;
+    }
+}
