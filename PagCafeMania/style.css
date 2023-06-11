@@ -309,6 +309,8 @@ button:hover {
     z-index: 3;
 }
 
+/* ---------- Evento 1 ---------- */
+
 .evento1 {
     display: flex;
     justify-content: space-around;
@@ -337,10 +339,15 @@ button:hover {
 }
 
 .evento1 .textEvento1 h2 {
-    color: rgb(232, 203, 44);
-    font-size: 35px;
+    color: rgb(255, 255, 0);
+    font-size: 25px;
     text-shadow: 2px 2px 0px black;
     text-align: center;
+    background-color: rgb(226, 205, 83);
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px rgb(41, 41, 41);
+    height: 67px;
+    width: 90%;
 }
 
 .evento1 .textEvento1 p {
@@ -357,7 +364,10 @@ button:hover {
     border: 2px solid black;
     background-color: rgb(255, 231, 189);
     transition: transform 100ms ease-in;
+    cursor: pointer;
 }
+
+/* ---------- Evento 2 ---------- */
 
 .evento2 {
     display: flex;
@@ -391,6 +401,10 @@ button:hover {
     font-size: 35px;
     text-shadow: 2px 2px 0px black;
     text-align: center;
+    background-color: rgb(119, 62, 11);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px rgb(41, 41, 41);
 }
 
 .evento2 .textEvento2 p {
@@ -401,13 +415,16 @@ button:hover {
 }
 
 .evento2 .textEvento2 button {
-    margin-top: 55px;
+    margin-top: 25px;
     padding: 10px;
     font-weight: bolder;
     border: 2px solid black;
     background-color: rgb(111, 64, 24);
     transition: transform 100ms ease-in;
+    cursor: pointer;
 }
+
+/* ---------- Evento 3 ---------- */
 
 .evento3 {
     display: flex;
@@ -439,8 +456,12 @@ button:hover {
 .evento3 .textEvento3 h2 {
     color: rgb(18, 138, 171);
     font-size: 35px;
-    text-shadow: 2px 2px 0px black;
     text-align: center;
+    text-shadow: 2px 2px 0px black;
+    background-color: rgb(210, 246, 234);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px rgb(41, 41, 41);
 }
 
 .evento3 .textEvento3 p {
@@ -457,6 +478,7 @@ button:hover {
     border: 2px solid black;
     background-color: rgb(217, 226, 235);
     transition: transform 100ms ease-in;
+    cursor: pointer;
 }
 
 .imgEvento img {
@@ -466,10 +488,206 @@ button:hover {
     border: 4px dashed rgb(233, 185, 82);
 }
 
+/* ----------- Tipos de contas ---------- */
+
+.contas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 475px;
+    width: 70%;
+    background-color: rgb(255, 160, 43);
+}
 
 
+.contas .textoInfoConta {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 75px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    height: 420px;
+    width: 30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-/* .evento1 */
+.contas .textoInfoConta h2 {
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+    background-color: rgb(255, 140, 0);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px rgb(41, 41, 41);
+}
+
+.contas .botao button{
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    font-weight: bolder;
+}
+
+.contas .textoInfoConta .texto {
+    padding: 20px;
+    background-color: rgb(255, 184, 97);
+    border-radius: 20px;
+    height: 400px;
+    width: 100%;
+    border: 4px solid rgb(246, 173, 83);
+}
+
+.contas .textoInfoConta .texto p {
+    text-align: justify;
+    text-indent: 15px;
+}
+
+.contas .tiposConta {
+    display: flex;
+    align-items: center;
+    height: 420px;
+    width: 50%;
+}
+
+/* ------------ Contas Padrões -------------- */
+
+.contas .contaDefault {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    margin-right: 40px;
+}
+
+.contas .tiposConta .contaDefault .textDefault {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: 250px;
+    background-color: rgb(255, 228, 141);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contas .tiposConta .contaDefault .textDefault h3 {
+    background-color: rgb(255, 214, 80);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.contas .tiposConta .contaDefault .textDefault p {
+    text-align: justify;
+    text-indent: 10px;
+}
+
+.contas .tiposConta .contaDefault .imgDefault {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 75px;
+    background-color: rgb(255, 220, 104);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom: 6px solid rgb(234, 198, 80);
+    padding: 15px;
+}
+
+.contas .tiposConta .contaDefault .imgDefault img {
+    width: 55px;
+}
+
+
+/* ------------ Conta Premium -------------- */
+
+.contas .contaPremium {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    margin-right: 40px;
+}
+
+.contas .tiposConta .contaPremium .textPremium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: 250px;
+    background-color: rgb(244, 247, 251);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: brilho 15s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.contas .tiposConta .contaPremium .textPremium h3 {
+    color:rgb(239, 255, 255);
+    font-weight: bolder;
+    background-color: rgb(154, 255, 255);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.contas .tiposConta .contaPremium .textPremium p {
+    text-align: justify;
+    text-indent: 10px;
+}
+
+.contas .tiposConta .contaPremium .imgPremium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 75px;
+    background-color: rgb(152, 240, 255);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom: 6px solid rgb(105, 230, 255);
+    padding: 15px;
+    animation: brilho 15s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes brilho {
+    0% {
+        box-shadow: 0px 0px 15px aliceblue;
+    }
+
+    25% {
+        box-shadow: 0px 0px 35px aliceblue;
+    }
+
+    50% {
+        box-shadow: 0px 0px 15px aliceblue;
+    }
+
+    75% {
+        box-shadow: 0px 0px 35px aliceblue;
+    }
+
+    100% {
+        box-shadow: 0px 0px 15px aliceblue;
+    }
+}
+
+.contas .tiposConta .contaPremium .imgPremium img {
+    width: 55px;
+    border-radius: 27.5pc;
+    border: 5px solid aqua;
+    box-shadow: 0px 0px 30px aquamarine;
+}
+
 
 /* ----------------------------------------------- */
 /* ---------- Footer --------- */
@@ -574,68 +792,71 @@ button:hover {
     }
 
     /* ----- evento 1 ----- */
-    .evento1{
+    .evento1 {
         width: 80%;
         height: 825px;
         flex-direction: column;
         align-items: center;
     }
 
-    .evento1 .textEvento1{
+    .evento1 .textEvento1 {
         width: 335px;
         font-size: small;
         padding: 5px;
     }
 
-    .evento1 .textEvento1 p{
+    .evento1 .textEvento1 p {
         width: 275px;
     }
 
-    .evento1 img{
+    .evento1 img {
         width: 335px;
         padding: 5px;
     }
 
     /* ----- evento 2 ----- */
-    .evento2{
+    .evento2 {
         width: 80%;
         height: 825px;
         flex-direction: column;
         align-items: center;
     }
-    .evento2 .textEvento2{
+
+    .evento2 .textEvento2 {
         width: 335px;
         font-size: small;
         padding: 5px;
     }
 
-    .evento2 .textEvento2 p{
+    .evento2 .textEvento2 p {
         width: 250px;
     }
 
-    .evento2 img{
+    .evento2 img {
         width: 335px;
         padding: 5px;
     }
+
     /* ----- evento 3 ----- */
 
-    .evento3{
+    .evento3 {
         width: 80%;
         height: 825px;
         flex-direction: column;
         align-items: center;
     }
-    .evento3 .textEvento3{
+
+    .evento3 .textEvento3 {
         width: 335px;
         font-size: small;
         padding: 5px;
     }
 
-    .evento3 .textEvento3 p{
+    .evento3 .textEvento3 p {
         width: 250px;
     }
 
-    .evento3 img{
+    .evento3 img {
         width: 335px;
         padding: 5px;
     }
