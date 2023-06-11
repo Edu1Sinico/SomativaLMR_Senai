@@ -315,7 +315,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    background-color: blanchedalmond;
+    background: linear-gradient(to left,blanchedalmond 25%,rgb(237, 217, 184) 55%, rgb(232, 200, 152) 75%);
     padding-top: 10px;
     height: 460px;
     width: 70%;
@@ -339,13 +339,12 @@ button:hover {
 }
 
 .evento1 .textEvento1 h2 {
-    color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
     font-size: 25px;
-    text-shadow: 2px 2px 0px black;
     text-align: center;
-    background-color: rgb(226, 205, 83);
+    background-color: rgb(253, 251, 222);
     border-radius: 15px;
-    box-shadow: 5px 5px 0px rgb(41, 41, 41);
+    box-shadow: 5px 5px 0px black;
     height: 67px;
     width: 90%;
 }
@@ -373,7 +372,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
-    background-color: rgb(78, 43, 13);
+    background: linear-gradient(to right,rgb(130, 78, 32) 25%,rgb(112, 65, 23) 55%, rgb(66, 36, 11) 75%);
     height: 460px;
     width: 70%;
     padding-top: 10px;
@@ -397,14 +396,13 @@ button:hover {
 }
 
 .evento2 .textEvento2 h2 {
-    color: rgb(164, 78, 2);
+    color: rgb(255, 121, 4);
     font-size: 35px;
-    text-shadow: 2px 2px 0px black;
     text-align: center;
     background-color: rgb(119, 62, 11);
     padding: 15px;
     border-radius: 15px;
-    box-shadow: 5px 5px 0px rgb(41, 41, 41);
+    box-shadow: 5px 5px 0px black;
 }
 
 .evento2 .textEvento2 p {
@@ -430,7 +428,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    background-color: aliceblue;
+    background: linear-gradient(to left,aliceblue 25%, rgb(202, 230, 255) 55%, rgb(165, 213, 255) 75%);
     height: 460px;
     width: 70%;
     padding-top: 10px;
@@ -454,14 +452,13 @@ button:hover {
 }
 
 .evento3 .textEvento3 h2 {
-    color: rgb(18, 138, 171);
+    color: rgb(40, 198, 241);
     font-size: 35px;
     text-align: center;
-    text-shadow: 2px 2px 0px black;
     background-color: rgb(210, 246, 234);
     padding: 15px;
     border-radius: 15px;
-    box-shadow: 5px 5px 0px rgb(41, 41, 41);
+    box-shadow: 5px 5px 0px black;
 }
 
 .evento3 .textEvento3 p {
@@ -496,7 +493,7 @@ button:hover {
     justify-content: space-between;
     height: 475px;
     width: 70%;
-    background-color: rgb(255, 160, 43);
+    background: linear-gradient(to right,rgb(255, 197, 126) 25%, rgb(254, 169, 65)55%, rgb(255, 140, 0)75%);
 }
 
 
@@ -531,6 +528,8 @@ button:hover {
     border-radius: 15px;
     background-color: aliceblue;
     font-weight: bolder;
+    transition: transform 200ms linear;
+    cursor: pointer;
 }
 
 .contas .textoInfoConta .texto {
@@ -859,5 +858,72 @@ button:hover {
     .evento3 img {
         width: 335px;
         padding: 5px;
+    }
+
+    /* ----------- Contas ----------- */
+
+    .contas{
+        width: 80%;
+        height: 885px;
+        flex-direction: column;
+    }
+
+    .contas .textoInfoConta{
+        margin: 0px;
+        width:70%;
+    }
+
+    .contas .textoInfoConta h2{
+        padding: 10px;
+        margin-top: 50px;
+        font-size: 25px;
+    }
+
+    .contas .textoInfoConta .texto{
+        padding: 10px;
+    }
+
+    .contas .tiposConta {
+        justify-content: center;
+    }
+    /* -------- Padrão ---------- */
+
+    .contas .tiposConta .contaDefault{
+        width:75%;
+    }
+
+    .contas .tiposConta .contaDefault .textDefault{
+        height: 235px;
+    }
+
+    .contas .tiposConta .contaDefault .textDefault h3{
+        padding: 5px;
+        font-weight:900;
+        font-size: 15px;
+    }
+
+    .contas .tiposConta .contaDefault .textDefault ul li{
+        font-size: 15px;
+    }
+
+
+    /* ------- Premium ---------- */
+    .contas .tiposConta .contaPremium{
+        margin: 0px;
+        width:75%;
+    }
+
+    .contas .tiposConta .contaPremium .textPremium{
+        height: 235px;
+    }
+
+    .contas .tiposConta .contaPremium .textPremium h3{
+        padding: 5px;
+        font-weight:900;
+        font-size: 15px;
+    }
+
+    .contas .tiposConta .contaPremium .textPremium ul li{
+        font-size: 14px;
     }
 }
