@@ -34,6 +34,7 @@ a {
     font-family: sans-serif;
     color: aliceblue;
     z-index: 1;
+    border-bottom: 4px solid rgb(77, 42, 1) ;
 }
 
 .menu .CoffeLogo {
@@ -84,6 +85,44 @@ a {
     padding-right: 15px;
 }
 
+.menu .lateral #verificarLogin{
+    display: none;
+    margin-right: 20px;
+}
+
+.menu .lateral #verificarLogin .loginAtivo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(252, 255, 95);
+    border-radius: 45px;
+    border: 3px solid black;
+}
+
+.menu .lateral #verificarLogin .loginAtivo #logoutButton button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aliceblue;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: transform 200ms ease-in-out;
+    cursor:pointer;
+}
+
+.menu .lateral #verificarLogin .loginAtivo span{
+    padding: 10px;
+    color: black;
+    font-weight: bolder;
+}
+
+.menu .lateral #verificarLogin .loginAtivo img{
+    width: 45px;
+    padding: 5px;
+}
+
 .menu .lateral .SearchIcon img {
     width: 50px;
     padding: 10px;
@@ -95,7 +134,11 @@ a {
     background-color: rgba(111, 69, 24, 0.5);
 }
 
-.menu .lateral .button1 {
+.menu .lateral #buttonLoginCad{
+    display: block;
+}
+
+.menu .lateral #buttonLoginCad .button1 {
     margin: 5px;
     background-color: aliceblue;
     border-radius: 50px;
@@ -109,7 +152,7 @@ a {
     box-shadow: 5px 5px 15px rgb(26, 26, 26);
 }
 
-.menu .lateral .button2 {
+.menu .lateral #buttonLoginCad .button2 {
     margin: 5px;
     background-color: black;
     color: white;
@@ -344,7 +387,7 @@ button:hover {
     text-align: center;
     background-color: rgb(253, 251, 222);
     border-radius: 15px;
-    box-shadow: 5px 5px 0px black;
+    box-shadow: 5px 5px 0px rgb(41, 41, 41);
     height: 67px;
     width: 90%;
 }
@@ -626,7 +669,7 @@ button:hover {
     border-bottom-right-radius: 25px;
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    animation: brilho 15s ease-in-out;
+    animation: brilho 10s ease-in-out;
     animation-iteration-count: infinite;
 }
 
@@ -654,7 +697,7 @@ button:hover {
     border-top-right-radius: 25px;
     border-bottom: 6px solid rgb(105, 230, 255);
     padding: 15px;
-    animation: brilho 15s ease-in-out;
+    animation: brilho 10s ease-in-out;
     animation-iteration-count: infinite;
 }
 

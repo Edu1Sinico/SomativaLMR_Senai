@@ -14,12 +14,12 @@
         <div class="parte1">
             <div class="user">
                 <img src="img/user.png" alt="user">
-                <input type="text" placeholder="Usuário">
+                <input type="text" for="pUser" id="pUser" placeholder="Usuário">
             </div>
 
             <div class="password">
                 <img src="img/lock.png" alt="" padlock>
-                <input type="password" placeholder="Senha">
+                <input type="password" for="pSenha" id="pSenha" placeholder="Senha">
             </div>
         </div>
 
@@ -31,10 +31,13 @@
             </div>
         </div>
         <div class="parte3">
-            <input type="button" value="LOGIN">
+            <input type="button" value="LOGIN" onclick="buttonLogin()">
+        </div>
+        <div class="cadRef">
+            <a href=""><i>Não possuí uma conta? Cadastrar-se.</i></a>
         </div>
     </form>
 </body>
-<script src="app.js"></script>
+<script src="appLogin.js"></script>
 
 </html>
