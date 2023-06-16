@@ -19,3 +19,7 @@ function clickSearch() {
 function clickLogin(){
     window.location.href="login.html"
 }
+
+function clickCad(){
+    window.location.href="cad.html"
+}

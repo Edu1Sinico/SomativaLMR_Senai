@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CafeMania - Cadastro</title>
+    <link rel="stylesheet" href="CSS/styleCad.css">
+    <link rel="icon" href="img/coffee-cup-logo.png" sizes="32x32">
+</head>
+
+<body>
+    <form action="" class="cadForm">
+        <!-- parte 1 da pág. cad. -->
+        <div class="parte1">
+            <!-- Coluna 1 da pág. cad. -->
+            <div class="coluna1">
+                <div class="nome">
+                    <label for="pName">Nome:</label>
+                    <input type="text" for="pName" id="pName" placeholder="Nome">
+                </div>
+                <div class="email">
+                    <label for="pEmail">E-mail:</label>
+                    <input type="email" for="pEmail" id="pEmail" placeholder="E-mail">
+                </div>
+                <div class="dataNasc">
+                    <label for="pDataNasc">Data de Nascimento:</label>
+                    <input type="date" name="pDataNasc" id="pDataNasc">
+                </div>
+                <div class="sexo">
+                    <label>Sexo:</label>
+                    <input name="sexo" id="f" type="radio" value="f"><label for="f" class="radioB">F
+                        <input name="sexo" id="m" type="radio" value="m"><label for="m" class="radioB">M
+                </div>
+                <div class="senha">
+                    <label for="pSenha">Senha:</label>
+                    <input type="password" for="pSenha" id="pSenha" placeholder="Senha">
+                </div>
+                <div class="senhaConfirmar">
+                    <label for="pSenha">Confirmar Senha:</label>
+                    <input type="password" for="pSenha" id="pSenha" placeholder="Reescreva a Senha">
+                </div>
+            </div>
+            <!-- Coluna 2 da pág. cad. -->
+            <div class="coluna2">
+                <div class="cep">
+                    <label for="pCep">CEP:</label>
+                    <input type="text" for="pCep" id="pCep" placeholder="CEP">
+                </div> 
+                <div class="cidade">
+                    <label for="pCidade">Cidade:</label>
+                    <input type="text" for="pName" id="pName" placeholder="Cidade">
+                </div>
+                <div class="estado">
+                    <label for="pEstado">Estado:</label>
+                    <input type="text" for="pEstado" id="pEstado" placeholder="Estado">
+                </div>
+                <div class="estado">
+                    <label for="pPais">Estado:</label>
+                    <input type="text" for="pPais" id="Pais" placeholder="País">
+                </div>
+                <div class="cpf">
+                    <label for="pCpf">CPF:</label>
+                    <input type="text" for="pCpf" id="pCpf" placeholder="CPF">
+                </div>
+            </div>
+        </div>
+        <!-- parte 2 da pág. cad. -->
+        <div class="parte2">
+            <input type="button" value="Cadastrar-se">
+        </div>
+        <div class="loginRef">
+            <a href="login.html"><i>Já possuí uma conta? faça login.</i></a>
+        </div>
+    </form>
+</body>
+<script src="appLogin.js"></script>
+
+</html>
