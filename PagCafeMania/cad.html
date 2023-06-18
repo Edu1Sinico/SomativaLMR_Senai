@@ -13,65 +13,81 @@
     <form action="" class="cadForm">
         <!-- parte 1 da pág. cad. -->
         <div class="parte1">
+
+            <h2>Cadastro</h2>
+            <hr>
+        </div>
+        <!-- parte 2 da pág. cad. -->
+        <div class="parte2">
             <!-- Coluna 1 da pág. cad. -->
             <div class="coluna1">
                 <div class="nome">
-                    <label for="pName">Nome:</label>
+                    <label for="pName">Nome:</label><br>
                     <input type="text" for="pName" id="pName" placeholder="Nome">
                 </div>
                 <div class="email">
-                    <label for="pEmail">E-mail:</label>
+                    <label for="pEmail">E-mail:</label><br>
                     <input type="email" for="pEmail" id="pEmail" placeholder="E-mail">
                 </div>
                 <div class="dataNasc">
-                    <label for="pDataNasc">Data de Nascimento:</label>
+                    <label for="pDataNasc">Data de Nascimento:</label><br>
                     <input type="date" name="pDataNasc" id="pDataNasc">
                 </div>
                 <div class="sexo">
-                    <label>Sexo:</label>
+                    <label>Sexo:</label><br>
                     <input name="sexo" id="f" type="radio" value="f"><label for="f" class="radioB">F
                         <input name="sexo" id="m" type="radio" value="m"><label for="m" class="radioB">M
                 </div>
                 <div class="senha">
-                    <label for="pSenha">Senha:</label>
-                    <input type="password" for="pSenha" id="pSenha" placeholder="Senha">
+                    <label for="pSenha">Senha:</label><br>
+                    <input type="password" id="pSenhaCad" placeholder="Senha">
                 </div>
                 <div class="senhaConfirmar">
-                    <label for="pSenha">Confirmar Senha:</label>
-                    <input type="password" for="pSenha" id="pSenha" placeholder="Reescreva a Senha">
+                    <label for="pSenha">Confirmar Senha:</label><br>
+                    <input type="password" id="pSenhaCadConf" placeholder="Reescreva a Senha">
                 </div>
             </div>
             <!-- Coluna 2 da pág. cad. -->
             <div class="coluna2">
                 <div class="cep">
-                    <label for="pCep">CEP:</label>
+                    <label for="pCep">CEP:</label><br>
                     <input type="text" for="pCep" id="pCep" placeholder="CEP">
-                </div> 
+                </div>
                 <div class="cidade">
-                    <label for="pCidade">Cidade:</label>
+                    <label for="pCidade">Cidade:</label><br>
                     <input type="text" for="pName" id="pName" placeholder="Cidade">
                 </div>
                 <div class="estado">
-                    <label for="pEstado">Estado:</label>
+                    <label for="pEstado">Estado:</label><br>
                     <input type="text" for="pEstado" id="pEstado" placeholder="Estado">
                 </div>
                 <div class="estado">
-                    <label for="pPais">Estado:</label>
+                    <label for="pPais">Estado:</label><br>
                     <input type="text" for="pPais" id="Pais" placeholder="País">
                 </div>
                 <div class="cpf">
-                    <label for="pCpf">CPF:</label>
+                    <label for="pCpf">CPF:</label><br>
                     <input type="text" for="pCpf" id="pCpf" placeholder="CPF">
+                </div>
+                <div class="contaTipo">
+                    <label for="pTipoList">Tipo da conta:</label><br>
+                    <select name="pTipoList" id="pTipoList">
+                        <option value="tipo">Conta Padrão</option>
+                        <option value="tipo">Conta Premium</option>
+                    </select>
                 </div>
             </div>
         </div>
-        <!-- parte 2 da pág. cad. -->
-        <div class="parte2">
-            <input type="button" value="Cadastrar-se">
+        <!-- parte 3 da pág. cad. -->
+        <div class="parte3">
+            <div class="botaoCad">
+                <input type="button" value="Cadastrar-se" onclick="">
+            </div>
+            <div class="loginRef">
+                <a href="login.html"><i>Já possuí uma conta? faça login.</i></a>
+            </div>
         </div>
-        <div class="loginRef">
-            <a href="login.html"><i>Já possuí uma conta? faça login.</i></a>
-        </div>
+
     </form>
 </body>
 <script src="appLogin.js"></script>

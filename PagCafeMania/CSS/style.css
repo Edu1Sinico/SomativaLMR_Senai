@@ -34,7 +34,7 @@ a {
     font-family: sans-serif;
     color: aliceblue;
     z-index: 1;
-    border-bottom: 4px solid rgb(77, 42, 1) ;
+    border-bottom: 4px solid rgb(77, 42, 1);
 }
 
 .menu .CoffeLogo {
@@ -85,12 +85,12 @@ a {
     padding-right: 15px;
 }
 
-.menu .lateral #verificarLogin{
+.menu .lateral #verificarLogin {
     display: none;
     margin-right: 20px;
 }
 
-.menu .lateral #verificarLogin .loginAtivo{
+.menu .lateral #verificarLogin .loginAtivo {
     display: flex;
     align-items: center;
     width: 100%;
@@ -100,7 +100,7 @@ a {
     border: 3px solid black;
 }
 
-.menu .lateral #verificarLogin .loginAtivo #logoutButton button{
+.menu .lateral #verificarLogin .loginAtivo #logoutButton button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: aliceblue;
     padding: 5px;
@@ -109,16 +109,16 @@ a {
     margin: 10px;
     border-radius: 15px;
     transition: transform 200ms ease-in-out;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.menu .lateral #verificarLogin .loginAtivo span{
+.menu .lateral #verificarLogin .loginAtivo span {
     padding: 10px;
     color: black;
     font-weight: bolder;
 }
 
-.menu .lateral #verificarLogin .loginAtivo img{
+.menu .lateral #verificarLogin .loginAtivo img {
     width: 45px;
     padding: 5px;
 }
@@ -134,7 +134,7 @@ a {
     background-color: rgba(111, 69, 24, 0.5);
 }
 
-.menu .lateral #buttonLoginCad{
+.menu .lateral #buttonLoginCad {
     display: block;
 }
 
@@ -346,10 +346,65 @@ button:hover {
 .menuCarrossel {
     margin-top: 130px;
     background-color: aliceblue;
-    height: 550px;
+    height: 594px;
     width: 70%;
     box-shadow: 0px 10px 25px rgb(26, 26, 26);
     z-index: 3;
+}
+
+.menuCarrossel .sliders input[type="radio"] {
+    display: none;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+    transition: 1s;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -1065px;
+    transition: 1s;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -2130px;
+    transition: 1s;
+}
+
+.menuCarrossel .sliders {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden; /* faz com que a rolagem desta parte desapareça */
+}
+
+
+.menuCarrossel .sliders .slider1 img, .slider2 img, .slider3 img {
+    width: 1065px;
+    height: 550px;
+    border-bottom: 4px solid rgb(210, 210, 210);
+}
+
+.nav-manual{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav-manual .manual-btn{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+}
+
+.nav-manual .manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: black;
 }
 
 /* ---------- Evento 1 ---------- */
@@ -358,7 +413,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    background: linear-gradient(to left,blanchedalmond 25%,rgb(237, 217, 184) 55%, rgb(232, 200, 152) 75%);
+    background: linear-gradient(to left, blanchedalmond 25%, rgb(237, 217, 184) 55%, rgb(232, 200, 152) 75%);
     padding-top: 10px;
     height: 460px;
     width: 70%;
@@ -415,7 +470,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
-    background: linear-gradient(to right,rgb(130, 78, 32) 25%,rgb(112, 65, 23) 55%, rgb(66, 36, 11) 75%);
+    background: linear-gradient(to right, rgb(130, 78, 32) 25%, rgb(112, 65, 23) 55%, rgb(66, 36, 11) 75%);
     height: 460px;
     width: 70%;
     padding-top: 10px;
@@ -471,7 +526,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    background: linear-gradient(to left,aliceblue 25%, rgb(202, 230, 255) 55%, rgb(165, 213, 255) 75%);
+    background: linear-gradient(to left, aliceblue 25%, rgb(202, 230, 255) 55%, rgb(165, 213, 255) 75%);
     height: 460px;
     width: 70%;
     padding-top: 10px;
@@ -536,7 +591,7 @@ button:hover {
     justify-content: space-between;
     height: 475px;
     width: 70%;
-    background: linear-gradient(to right,rgb(255, 197, 126) 25%, rgb(254, 169, 65)55%, rgb(255, 140, 0)75%);
+    background: linear-gradient(to right, rgb(255, 197, 126) 25%, rgb(254, 169, 65)55%, rgb(255, 140, 0)75%);
 }
 
 
@@ -563,7 +618,7 @@ button:hover {
     box-shadow: 5px 5px 0px rgb(41, 41, 41);
 }
 
-.contas .botao button{
+.contas .botao button {
     margin-top: 10px;
     padding: 5px;
     padding-left: 30px;
@@ -674,7 +729,7 @@ button:hover {
 }
 
 .contas .tiposConta .contaPremium .textPremium h3 {
-    color:rgb(239, 255, 255);
+    color: rgb(239, 255, 255);
     font-weight: bolder;
     background-color: rgb(154, 255, 255);
     border-radius: 15px;
@@ -831,7 +886,36 @@ button:hover {
 
     .menuCarrossel {
         width: 80%;
+        height: 220px
     }
+
+    .menuCarrossel .sliders .slider1 img, .slider2 img, .slider3 img{
+        width: 532.5px;
+        height: 60%;
+    }
+
+    #radio1:checked ~ .primeiro{
+        margin-left: 0%;
+        transition: 1s;
+    }
+    
+    #radio2:checked ~ .primeiro{
+        margin-left: -532.5px;
+        transition: 1s;
+    }
+    
+    #radio3:checked ~ .primeiro{
+        margin-left: -1065px;
+        transition: 1s;
+    }
+
+    .nav-manual{
+        position: relative;
+        width: 80%;
+        bottom: 115px;
+        left: 30px;
+    }
+
 
     /* ----- evento 1 ----- */
     .evento1 {
@@ -905,68 +989,69 @@ button:hover {
 
     /* ----------- Contas ----------- */
 
-    .contas{
+    .contas {
         width: 80%;
         height: 885px;
         flex-direction: column;
     }
 
-    .contas .textoInfoConta{
+    .contas .textoInfoConta {
         margin: 0px;
-        width:70%;
+        width: 70%;
     }
 
-    .contas .textoInfoConta h2{
+    .contas .textoInfoConta h2 {
         padding: 10px;
         margin-top: 50px;
         font-size: 25px;
     }
 
-    .contas .textoInfoConta .texto{
+    .contas .textoInfoConta .texto {
         padding: 10px;
     }
 
     .contas .tiposConta {
         justify-content: center;
     }
+
     /* -------- Padrão ---------- */
 
-    .contas .tiposConta .contaDefault{
-        width:75%;
+    .contas .tiposConta .contaDefault {
+        width: 75%;
     }
 
-    .contas .tiposConta .contaDefault .textDefault{
+    .contas .tiposConta .contaDefault .textDefault {
         height: 235px;
     }
 
-    .contas .tiposConta .contaDefault .textDefault h3{
+    .contas .tiposConta .contaDefault .textDefault h3 {
         padding: 5px;
-        font-weight:900;
+        font-weight: 900;
         font-size: 15px;
     }
 
-    .contas .tiposConta .contaDefault .textDefault ul li{
+    .contas .tiposConta .contaDefault .textDefault ul li {
         font-size: 15px;
     }
 
 
     /* ------- Premium ---------- */
-    .contas .tiposConta .contaPremium{
+    .contas .tiposConta .contaPremium {
         margin: 0px;
-        width:75%;
+        width: 75%;
     }
 
-    .contas .tiposConta .contaPremium .textPremium{
+    .contas .tiposConta .contaPremium .textPremium {
         height: 235px;
     }
 
-    .contas .tiposConta .contaPremium .textPremium h3{
+    .contas .tiposConta .contaPremium .textPremium h3 {
         padding: 5px;
-        font-weight:900;
+        font-weight: 900;
         font-size: 15px;
     }
 
-    .contas .tiposConta .contaPremium .textPremium ul li{
+    .contas .tiposConta .contaPremium .textPremium ul li {
         font-size: 14px;
     }
 }
